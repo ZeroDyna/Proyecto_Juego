@@ -1,7 +1,7 @@
 CMakeFiles/Game.dir/Personaje.cpp.o: \
- /home/delusion7/Documentos/juego/Personaje.cpp \
+ /home/delusion7/Documentos/Proyecto_Juego/juego/Personaje.cpp \
  /usr/include/stdc-predef.h \
- /home/delusion7/Documentos/juego/Personaje.hpp \
+ /home/delusion7/Documentos/Proyecto_Juego/juego/Personaje.hpp \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \

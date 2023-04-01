@@ -6,13 +6,12 @@
 class Personaje
 {
 public:
-    Personaje(sf::Vector2f posicion, sf::Vector2f tamano, sf::Color color);
-
-    void mover(sf::Vector2f direccion);
+	Personaje(float velocidad);
+    void mover(sf::RenderWindow& ventana);
     void dibujar(sf::RenderWindow& ventana);
-
 private:
-    sf::RectangleShape m_rectangulo;
+    sf::RectangleShape rectangulo;
+	float velocidad;
 };
 
 #endif // PERSONAJE_HPP

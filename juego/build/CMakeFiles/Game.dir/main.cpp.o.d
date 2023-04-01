@@ -1,4 +1,5 @@
-CMakeFiles/Game.dir/main.cpp.o: /home/delusion7/Documentos/juego/main.cpp \
+CMakeFiles/Game.dir/main.cpp.o: \
+ /home/delusion7/Documentos/Proyecto_Juego/juego/main.cpp \
  /usr/include/stdc-predef.h /usr/include/SFML/Graphics.hpp \
  /usr/include/SFML/Window.hpp /usr/include/SFML/System.hpp \
  /usr/include/SFML/Config.hpp /usr/include/SFML/System/Clock.hpp \
@@ -224,4 +225,4 @@ CMakeFiles/Game.dir/main.cpp.o: /home/delusion7/Documentos/juego/main.cpp \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/delusion7/Documentos/juego/Personaje.hpp
+ /home/delusion7/Documentos/Proyecto_Juego/juego/Personaje.hpp
