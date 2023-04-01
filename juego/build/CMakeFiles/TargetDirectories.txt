@@ -1,0 +1,3 @@
+/home/delusion7/Documentos/juego/build/CMakeFiles/Game.dir
+/home/delusion7/Documentos/juego/build/CMakeFiles/edit_cache.dir
+/home/delusion7/Documentos/juego/build/CMakeFiles/rebuild_cache.dir
