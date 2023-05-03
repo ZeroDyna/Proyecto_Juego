@@ -8,7 +8,7 @@ int main() {
 
     Personaje personaje(5);
     sf::Music music;
-    if (!music.openFromFile(revival.ogg)){
+    if (!music.openFromFile("revival.ogg")){
         std::cout << "ERROR" << std::endl;
 
     }
