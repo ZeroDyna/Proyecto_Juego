@@ -153,6 +153,30 @@ Personaje.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/juego.dir/build.make CMakeFiles/juego.dir/Personaje.cpp.s
 .PHONY : Personaje.cpp.s
 
+fondo.o: fondo.cpp.o
+.PHONY : fondo.o
+
+# target to build an object file
+fondo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/juego.dir/build.make CMakeFiles/juego.dir/fondo.cpp.o
+.PHONY : fondo.cpp.o
+
+fondo.i: fondo.cpp.i
+.PHONY : fondo.i
+
+# target to preprocess a source file
+fondo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/juego.dir/build.make CMakeFiles/juego.dir/fondo.cpp.i
+.PHONY : fondo.cpp.i
+
+fondo.s: fondo.cpp.s
+.PHONY : fondo.s
+
+# target to generate assembly for a file
+fondo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/juego.dir/build.make CMakeFiles/juego.dir/fondo.cpp.s
+.PHONY : fondo.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... Personaje.o"
 	@echo "... Personaje.i"
 	@echo "... Personaje.s"
+	@echo "... fondo.o"
+	@echo "... fondo.i"
+	@echo "... fondo.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

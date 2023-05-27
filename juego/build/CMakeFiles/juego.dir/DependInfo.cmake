@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/delusion7/Documentos/Uni/juego win/Proyecto_Juego/juego/Personaje.cpp" "CMakeFiles/juego.dir/Personaje.cpp.o" "gcc" "CMakeFiles/juego.dir/Personaje.cpp.o.d"
+  "/home/delusion7/Documentos/Uni/juego win/Proyecto_Juego/juego/fondo.cpp" "CMakeFiles/juego.dir/fondo.cpp.o" "gcc" "CMakeFiles/juego.dir/fondo.cpp.o.d"
   "/home/delusion7/Documentos/Uni/juego win/Proyecto_Juego/juego/main.cpp" "CMakeFiles/juego.dir/main.cpp.o" "gcc" "CMakeFiles/juego.dir/main.cpp.o.d"
   )
 

@@ -20,13 +20,18 @@ void Personaje::mover(sf::RenderWindow& ventana) {
         sprite.move(0, velocidad);
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-        girar(-5);
         sprite.move(-velocidad, 0);
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-        girar(5);
         sprite.move(velocidad, 0);
     }
+   if(sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
+        girar(-5);
+    }
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+        girar(5);
+    }
+
 }
 
 void Personaje::dibujar(sf::RenderWindow& ventana) {

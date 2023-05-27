@@ -1,5 +1,5 @@
-#pragma once
-
+#ifndef FONDO_HPP
+#define FONDO_HPP
 #include <SFML/Graphics.hpp>
 
 class FondoAleatorio {
@@ -13,4 +13,4 @@ private:
     std::vector<sf::Texture> texturas_;
     sf::RenderWindow& ventana_;
 };
-
+#endif // FONDO_HPP
