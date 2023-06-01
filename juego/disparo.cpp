@@ -3,7 +3,6 @@
 
 Disparo::Disparo(float velocidad, float angulo, sf::Vector2f posicionInicial) {
     this->velocidad = velocidad;
-    shape.setRadius(5.0f);
     shape.setFillColor(sf::Color::Red);
     shape.setPosition(posicionInicial);
 

@@ -9,7 +9,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 
 # Añade los archivos fuente al proyecto
-add_executable(juego main.cpp Personaje.cpp Personaje.hpp fondo.cpp fondo.hpp)
+add_executable(juego main.cpp Personaje.cpp Personaje.hpp fondo.cpp fondo.hpp objeto.hpp asteroide.hpp asteroide.cpp)
 
 # Enlaza la biblioteca de SFML al proyecto
 target_link_libraries(juego sfml-graphics sfml-audio)
@@ -22,4 +22,4 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 
 # Copia la carpeta "img" al directorio de salida
 file(COPY ${CMAKE_SOURCE_DIR}/img DESTINATION ${CMAKE_BINARY_DIR})
-
+ 

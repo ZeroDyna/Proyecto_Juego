@@ -11,7 +11,7 @@ public:
     void dibujar(sf::RenderWindow& ventana);
 
 private:
-    sf::CircleShape shape;
+    sf::RectangleShape shape;
     float velocidad;
     sf::Vector2f direccion;
 };
