@@ -1,10 +1,15 @@
 #include "asteroide.hpp"
 
-Asteroide::Asteroide(float radio, const sf::Vector2f& posicionInicial, const sf::Vector2f& velocidadInicial, sf::RenderWindow& ventana)
+Asteroide::Asteroide(float radio, const sf::Vector2f& velocidadInicial, sf::RenderWindow& ventana)
     : velocidad(velocidadInicial), ventana(ventana) {
     forma.setRadius(radio);
     forma.setOrigin(radio, radio);
-    forma.setPosition(posicionInicial);
+
+    // Calcular la posición inicial distribuyendo uniformemente los asteroides a lo largo del eje x
+    float posicionX = static_cast<float>(rand()) / static_cast<float>(RAND_MAX) * ventana.getSize().x;
+    float posicionY = -radio; // Iniciar arriba de la ventana
+
+    forma.setPosition(posicionX, posicionY);
 }
 
 void Asteroide::actualizar(float deltaTime) {
