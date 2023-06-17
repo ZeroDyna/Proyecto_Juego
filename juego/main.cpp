@@ -1,11 +1,8 @@
+#include <iostream>
 #include <SFML/Graphics.hpp>
-#include "Personaje.hpp"
 #include "SFML/Audio.hpp"
-#include "fondo.hpp"
-#include "asteroide.hpp"
-#include <SFML/Graphics.hpp>
 #include "Personaje.hpp"
-#include "SFML/Audio.hpp"
+#include "disparo.hpp"
 #include "fondo.hpp"
 #include "asteroide.hpp"
 
@@ -14,15 +11,17 @@ int main() {
     ventana.setFramerateLimit(60);
 
     Personaje personaje(5);
-    FondoAleatorio fondo(ventana); // Creamos un objeto FondoAleatorio
+    FondoAleatorio fondo(ventana);
     sf::Music music;
     if (!music.openFromFile("revival.ogg")) {
         std::cout << "ERROR" << std::endl;
     }
     music.play();
     
-    std::vector<Asteroide> asteroides; // Vector para almacenar los asteroides generados
-    sf::Clock temporizador; // Temporizador para generar asteroides cada segundo
+    std::vector<Asteroide> asteroides;
+    std::vector<Disparo> disparos;
+
+    sf::Clock temporizador;
 
     while (ventana.isOpen()) {
         sf::Event evento;
@@ -40,18 +39,32 @@ int main() {
             temporizador.restart();
         }
 
+        // Generar un disparo al presionar la tecla "s"
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+            sf::Vector2f posicionPersonaje = personaje.getPosicion();
+            float anguloPersonaje = personaje.getAngulo();
+            Disparo disparo(10.0f, anguloPersonaje, posicionPersonaje);
+            disparos.push_back(disparo);
+        }
+
         // Actualizar los asteroides existentes
         for (auto& asteroide : asteroides) {
-            asteroide.actualizar(1.0f / 60.0f); // Actualizamos cada asteroide con un deltaTime constante de 1/60 (60 FPS)
+            asteroide.actualizar(1.0f / 60.0f);
         }
 
         ventana.clear(sf::Color::Black);
-        fondo.dibujar(); // Dibujamos el fondo antes del personaje
+        fondo.dibujar();
         personaje.dibujar(ventana);
 
         // Dibujar los asteroides existentes
         for (const auto& asteroide : asteroides) {
             asteroide.dibujar(ventana);
+        }
+
+        // Actualizar y dibujar los disparos existentes
+        for (auto& disparo : disparos) {
+            disparo.mover();
+            disparo.dibujar(ventana);
         }
 
         ventana.display();

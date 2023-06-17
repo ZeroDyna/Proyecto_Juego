@@ -10,6 +10,9 @@ public:
     void mover();
     void dibujar(sf::RenderWindow& ventana);
 
+    sf::Vector2f getPosicion() const;
+    float getAngulo() const;
+
 private:
     sf::RectangleShape shape;
     float velocidad;
