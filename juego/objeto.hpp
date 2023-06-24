@@ -15,7 +15,6 @@ public:
     virtual void actualizar(float deltaTime) = 0;
     virtual void dibujar(sf::RenderWindow& ventana) const;
     sf::FloatRect obtenerLimitesGlobales() const;
-    virtual void alColisionar(objeto& otro) = 0;
 };
 
 #endif

@@ -3,6 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "objeto.hpp"
+#include "Personaje.hpp"
 
 class Asteroide : public objeto {
 private:
@@ -14,8 +15,8 @@ public:
 
     void actualizar(float deltaTime) override;
     void dibujar(sf::RenderWindow& ventana) const override;
-    void alColisionar(objeto& otro) override;
 };
+
 
 #endif
 

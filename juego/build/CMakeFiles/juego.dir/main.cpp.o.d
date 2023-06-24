@@ -1,5 +1,5 @@
 CMakeFiles/juego.dir/main.cpp.o: \
- /home/delusion7/Documentos/Uni/last/Proyecto_Juego/juego/main.cpp \
+ /home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/12/iostream \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -248,8 +248,36 @@ CMakeFiles/juego.dir/main.cpp.o: \
  /usr/include/SFML/Audio/SoundFileFactory.inl \
  /usr/include/SFML/Audio/SoundFileReader.hpp \
  /usr/include/SFML/Audio/SoundFileWriter.hpp \
- /home/delusion7/Documentos/Uni/last/Proyecto_Juego/juego/Personaje.hpp \
- /home/delusion7/Documentos/Uni/last/Proyecto_Juego/juego/disparo.hpp \
- /home/delusion7/Documentos/Uni/last/Proyecto_Juego/juego/fondo.hpp \
- /home/delusion7/Documentos/Uni/last/Proyecto_Juego/juego/asteroide.hpp \
- /home/delusion7/Documentos/Uni/last/Proyecto_Juego/juego/objeto.hpp
+ /home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego/Personaje.hpp \
+ /home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego/disparo.hpp \
+ /home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego/objeto.hpp \
+ /home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego/fondo.hpp \
+ /home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego/asteroide.hpp \
+ /usr/include/c++/12/random /usr/include/c++/12/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/12/bits/specfun.h /usr/include/c++/12/limits \
+ /usr/include/c++/12/tr1/gamma.tcc \
+ /usr/include/c++/12/tr1/special_function_util.h \
+ /usr/include/c++/12/tr1/bessel_function.tcc \
+ /usr/include/c++/12/tr1/beta_function.tcc \
+ /usr/include/c++/12/tr1/ell_integral.tcc \
+ /usr/include/c++/12/tr1/exp_integral.tcc \
+ /usr/include/c++/12/tr1/hypergeometric.tcc \
+ /usr/include/c++/12/tr1/legendre_function.tcc \
+ /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/12/tr1/poly_hermite.tcc \
+ /usr/include/c++/12/tr1/poly_laguerre.tcc \
+ /usr/include/c++/12/tr1/riemann_zeta.tcc \
+ /usr/include/c++/12/bits/random.h \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/opt_random.h \
+ /usr/include/c++/12/bits/random.tcc /usr/include/c++/12/numeric \
+ /usr/include/c++/12/bits/stl_numeric.h /usr/include/c++/12/bit \
+ /usr/include/c++/12/pstl/glue_numeric_defs.h

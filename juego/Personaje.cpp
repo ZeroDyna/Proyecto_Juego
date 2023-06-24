@@ -32,7 +32,6 @@ void Personaje::mover(sf::RenderWindow& ventana) {
         girar(5);
     }
 }
-
 void Personaje::dibujar(sf::RenderWindow& ventana) {
     ventana.draw(sprite);
 }

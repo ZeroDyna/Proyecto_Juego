@@ -3,6 +3,7 @@
 
 Disparo::Disparo(float velocidad, float angulo, sf::Vector2f posicionInicial) {
     this->velocidad = velocidad;
+    shape.setSize(sf::Vector2f(10.0f, 10.0f));  // Tamaño del cuadrado del disparo
     shape.setFillColor(sf::Color::Red);
     shape.setPosition(posicionInicial);
 

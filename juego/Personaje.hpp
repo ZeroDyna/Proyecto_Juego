@@ -3,8 +3,9 @@
 
 #include <SFML/Graphics.hpp>
 #include "disparo.hpp"
+#include "objeto.hpp"
 
-class Personaje: public Disparo {
+class Personaje{
 public:
     Personaje(float velocidad);
 
@@ -19,6 +20,8 @@ private:
     sf::Sprite sprite;
     sf::Texture textura;
     float velocidad;
+	int colisiones;
+	bool end;
 };
 
 #endif // PERSONAJE_HPP

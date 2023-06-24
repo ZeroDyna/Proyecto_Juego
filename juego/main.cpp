@@ -5,6 +5,7 @@
 #include "disparo.hpp"
 #include "fondo.hpp"
 #include "asteroide.hpp"
+#include <random>
 
 int main() {
     sf::RenderWindow ventana(sf::VideoMode(1800, 900), "Mi juego");
@@ -17,11 +18,16 @@ int main() {
         std::cout << "ERROR" << std::endl;
     }
     music.play();
-    
+
     std::vector<Asteroide> asteroides;
     std::vector<Disparo> disparos;
 
     sf::Clock temporizador;
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_real_distribution<float> disX(0.0f, static_cast<float>(ventana.getSize().x));
+    std::uniform_real_distribution<float> disVelocidad(50.0f, 200.0f);
+    std::uniform_real_distribution<float> disRadio(20.0f, 40.0f);
 
     while (ventana.isOpen()) {
         sf::Event evento;
@@ -32,24 +38,31 @@ int main() {
         }
 
         personaje.mover(ventana);
+		// Generar un nuevo asteroide cada segundo
+		if (temporizador.getElapsedTime().asSeconds() >= 1.0f) {
+		float posX = disX(gen);
+		float velocidadY = 500.0f; // Cambia este valor para ajustar la velocidad de caída
+		float radio = disRadio(gen);
+		asteroides.emplace_back(radio, sf::Vector2f(posX, 0.0f), sf::Vector2f(0.0f, velocidadY), ventana);
+		temporizador.restart();
+}
 
-        // Generar un nuevo asteroide cada 3 segundos
-        if (temporizador.getElapsedTime().asSeconds() >= 3.0f) {
-            asteroides.emplace_back(30.0f, sf::Vector2f(400.0f, 0.0f), sf::Vector2f(0.0f, 100.0f), ventana);
-            temporizador.restart();
-        }
-
-        // Generar un disparo al presionar la tecla "s"
+        // Generar un disparo al presionar la tecla "S"
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
             sf::Vector2f posicionPersonaje = personaje.getPosicion();
             float anguloPersonaje = personaje.getAngulo();
-            Disparo disparo(10.0f, anguloPersonaje, posicionPersonaje);
+            Disparo disparo(10.0f, anguloPersonaje - 90 , posicionPersonaje);
             disparos.push_back(disparo);
         }
 
         // Actualizar los asteroides existentes
         for (auto& asteroide : asteroides) {
             asteroide.actualizar(1.0f / 60.0f);
+        }
+
+        // Actualizar los disparos existentes
+        for (auto& disparo : disparos) {
+            disparo.mover();
         }
 
         ventana.clear(sf::Color::Black);
@@ -61,9 +74,8 @@ int main() {
             asteroide.dibujar(ventana);
         }
 
-        // Actualizar y dibujar los disparos existentes
+        // Dibujar los disparos existentes
         for (auto& disparo : disparos) {
-            disparo.mover();
             disparo.dibujar(ventana);
         }
 

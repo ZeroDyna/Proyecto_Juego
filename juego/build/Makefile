@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/delusion7/Documentos/Uni/last/Proyecto_Juego/juego
+CMAKE_SOURCE_DIR = /home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/delusion7/Documentos/Uni/last/Proyecto_Juego/juego/build
+CMAKE_BINARY_DIR = /home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/delusion7/Documentos/Uni/last/Proyecto_Juego/juego/build/CMakeFiles /home/delusion7/Documentos/Uni/last/Proyecto_Juego/juego/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego/build/CMakeFiles /home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/delusion7/Documentos/Uni/last/Proyecto_Juego/juego/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
