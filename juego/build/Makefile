@@ -177,6 +177,30 @@ asteroide.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/juego.dir/build.make CMakeFiles/juego.dir/asteroide.cpp.s
 .PHONY : asteroide.cpp.s
 
+cometa.o: cometa.cpp.o
+.PHONY : cometa.o
+
+# target to build an object file
+cometa.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/juego.dir/build.make CMakeFiles/juego.dir/cometa.cpp.o
+.PHONY : cometa.cpp.o
+
+cometa.i: cometa.cpp.i
+.PHONY : cometa.i
+
+# target to preprocess a source file
+cometa.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/juego.dir/build.make CMakeFiles/juego.dir/cometa.cpp.i
+.PHONY : cometa.cpp.i
+
+cometa.s: cometa.cpp.s
+.PHONY : cometa.s
+
+# target to generate assembly for a file
+cometa.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/juego.dir/build.make CMakeFiles/juego.dir/cometa.cpp.s
+.PHONY : cometa.cpp.s
+
 disparo.o: disparo.cpp.o
 .PHONY : disparo.o
 
@@ -273,6 +297,30 @@ objeto.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/juego.dir/build.make CMakeFiles/juego.dir/objeto.cpp.s
 .PHONY : objeto.cpp.s
 
+pantalla_inicio.o: pantalla_inicio.cpp.o
+.PHONY : pantalla_inicio.o
+
+# target to build an object file
+pantalla_inicio.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/juego.dir/build.make CMakeFiles/juego.dir/pantalla_inicio.cpp.o
+.PHONY : pantalla_inicio.cpp.o
+
+pantalla_inicio.i: pantalla_inicio.cpp.i
+.PHONY : pantalla_inicio.i
+
+# target to preprocess a source file
+pantalla_inicio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/juego.dir/build.make CMakeFiles/juego.dir/pantalla_inicio.cpp.i
+.PHONY : pantalla_inicio.cpp.i
+
+pantalla_inicio.s: pantalla_inicio.cpp.s
+.PHONY : pantalla_inicio.s
+
+# target to generate assembly for a file
+pantalla_inicio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/juego.dir/build.make CMakeFiles/juego.dir/pantalla_inicio.cpp.s
+.PHONY : pantalla_inicio.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -288,6 +336,9 @@ help:
 	@echo "... asteroide.o"
 	@echo "... asteroide.i"
 	@echo "... asteroide.s"
+	@echo "... cometa.o"
+	@echo "... cometa.i"
+	@echo "... cometa.s"
 	@echo "... disparo.o"
 	@echo "... disparo.i"
 	@echo "... disparo.s"
@@ -300,6 +351,9 @@ help:
 	@echo "... objeto.o"
 	@echo "... objeto.i"
 	@echo "... objeto.s"
+	@echo "... pantalla_inicio.o"
+	@echo "... pantalla_inicio.i"
+	@echo "... pantalla_inicio.s"
 .PHONY : help
 
 

@@ -81,12 +81,12 @@ clean: CMakeFiles/juego.dir/clean
 CMakeFiles/juego.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/juego.dir/build.make CMakeFiles/juego.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/juego.dir/build.make CMakeFiles/juego.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target juego"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target juego"
 .PHONY : CMakeFiles/juego.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/juego.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/juego.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build/CMakeFiles 0
 .PHONY : CMakeFiles/juego.dir/rule

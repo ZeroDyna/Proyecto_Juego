@@ -1,15 +1,19 @@
-//esta clase debe de sre similar a la cclase asteroideper al moemnto de aoareccer en bez de hace ruq vaya haceia abajo ccomo asteroide, recorreraa un camino de zig zag para alcanzar mas facil al jugador
 #ifndef COMETA_HPP
 #define COMETA_HPP
+
+#include <SFML/Graphics.hpp>
 #include "objeto.hpp"
-using namespace sf;
-class cometa : public objeto {
-	protected:
-	CircleShape forma;
-	Vector2f veloz;
-	RenderWindow ventana;
-	public:
-	virtual void actualizar;
+
+class Cometa : public objeto {
+private:
+    sf::Vector2f velocidad;
+    sf::RenderWindow* ventana;
+
+public:
+    Cometa(float radio, const sf::Vector2f& posicionInicial, const sf::Vector2f& velocidadInicial, sf::RenderWindow* ventana);
+
+    void actualizar(float deltaTime) override;
+    bool colisiona(const sf::FloatRect& bounds) const;
 };
 
-#endif
+#endif // COMETA_HPP

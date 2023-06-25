@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/juego.dir/Personaje.cpp.o.d"
   "CMakeFiles/juego.dir/asteroide.cpp.o"
   "CMakeFiles/juego.dir/asteroide.cpp.o.d"
+  "CMakeFiles/juego.dir/cometa.cpp.o"
+  "CMakeFiles/juego.dir/cometa.cpp.o.d"
   "CMakeFiles/juego.dir/disparo.cpp.o"
   "CMakeFiles/juego.dir/disparo.cpp.o.d"
   "CMakeFiles/juego.dir/fondo.cpp.o"
@@ -11,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/juego.dir/main.cpp.o.d"
   "CMakeFiles/juego.dir/objeto.cpp.o"
   "CMakeFiles/juego.dir/objeto.cpp.o.d"
+  "CMakeFiles/juego.dir/pantalla_inicio.cpp.o"
+  "CMakeFiles/juego.dir/pantalla_inicio.cpp.o.d"
   "juego"
   "juego.pdb"
 )

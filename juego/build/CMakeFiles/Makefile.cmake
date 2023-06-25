@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.25.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeSystem.cmake"
+  "/home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/fuente/ultraman.otf"
   "/home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/revival.ogg"
   "/usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake"
@@ -125,6 +126,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.25.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeCXXCompiler.cmake"
   "revival.ogg"
+  "ultraman.otf"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

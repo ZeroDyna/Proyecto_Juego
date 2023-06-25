@@ -4,6 +4,8 @@
 Asteroide::Asteroide(float radio, const sf::Vector2f& posicionInicial, const sf::Vector2f& velocidadInicial, sf::RenderWindow* ventana)
     : objeto(radio, posicionInicial, velocidadInicial), ventana(ventana) {
     velocidad = velocidadInicial;
+    forma.setFillColor(sf::Color(72, 60, 50)); // Color café oscuro (RGB: 72, 60, 50)
+
 }
 
 void Asteroide::actualizar(float deltaTime) {

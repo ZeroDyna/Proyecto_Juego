@@ -153,6 +153,34 @@ CMakeFiles/juego.dir/asteroide.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juego.dir/asteroide.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/asteroide.cpp -o CMakeFiles/juego.dir/asteroide.cpp.s
 
+CMakeFiles/juego.dir/pantalla_inicio.cpp.o: CMakeFiles/juego.dir/flags.make
+CMakeFiles/juego.dir/pantalla_inicio.cpp.o: /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/pantalla_inicio.cpp
+CMakeFiles/juego.dir/pantalla_inicio.cpp.o: CMakeFiles/juego.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/juego.dir/pantalla_inicio.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/juego.dir/pantalla_inicio.cpp.o -MF CMakeFiles/juego.dir/pantalla_inicio.cpp.o.d -o CMakeFiles/juego.dir/pantalla_inicio.cpp.o -c /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/pantalla_inicio.cpp
+
+CMakeFiles/juego.dir/pantalla_inicio.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juego.dir/pantalla_inicio.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/pantalla_inicio.cpp > CMakeFiles/juego.dir/pantalla_inicio.cpp.i
+
+CMakeFiles/juego.dir/pantalla_inicio.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juego.dir/pantalla_inicio.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/pantalla_inicio.cpp -o CMakeFiles/juego.dir/pantalla_inicio.cpp.s
+
+CMakeFiles/juego.dir/cometa.cpp.o: CMakeFiles/juego.dir/flags.make
+CMakeFiles/juego.dir/cometa.cpp.o: /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/cometa.cpp
+CMakeFiles/juego.dir/cometa.cpp.o: CMakeFiles/juego.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/juego.dir/cometa.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/juego.dir/cometa.cpp.o -MF CMakeFiles/juego.dir/cometa.cpp.o.d -o CMakeFiles/juego.dir/cometa.cpp.o -c /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/cometa.cpp
+
+CMakeFiles/juego.dir/cometa.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juego.dir/cometa.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/cometa.cpp > CMakeFiles/juego.dir/cometa.cpp.i
+
+CMakeFiles/juego.dir/cometa.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juego.dir/cometa.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/cometa.cpp -o CMakeFiles/juego.dir/cometa.cpp.s
+
 # Object files for target juego
 juego_OBJECTS = \
 "CMakeFiles/juego.dir/main.cpp.o" \
@@ -160,7 +188,9 @@ juego_OBJECTS = \
 "CMakeFiles/juego.dir/fondo.cpp.o" \
 "CMakeFiles/juego.dir/disparo.cpp.o" \
 "CMakeFiles/juego.dir/objeto.cpp.o" \
-"CMakeFiles/juego.dir/asteroide.cpp.o"
+"CMakeFiles/juego.dir/asteroide.cpp.o" \
+"CMakeFiles/juego.dir/pantalla_inicio.cpp.o" \
+"CMakeFiles/juego.dir/cometa.cpp.o"
 
 # External object files for target juego
 juego_EXTERNAL_OBJECTS =
@@ -171,13 +201,15 @@ juego: CMakeFiles/juego.dir/fondo.cpp.o
 juego: CMakeFiles/juego.dir/disparo.cpp.o
 juego: CMakeFiles/juego.dir/objeto.cpp.o
 juego: CMakeFiles/juego.dir/asteroide.cpp.o
+juego: CMakeFiles/juego.dir/pantalla_inicio.cpp.o
+juego: CMakeFiles/juego.dir/cometa.cpp.o
 juego: CMakeFiles/juego.dir/build.make
 juego: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 juego: /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1
 juego: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 juego: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 juego: CMakeFiles/juego.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable juego"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable juego"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/juego.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
