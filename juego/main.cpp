@@ -58,24 +58,38 @@ int main() {
         }
 
         // Actualizar los asteroides existentes
-        for (auto it = asteroides.begin(); it != asteroides.end();) {
-            it->actualizar(1.0f / 60.0f);
+        for (auto itAster = asteroides.begin(); itAster != asteroides.end();) {
+            Asteroide& asteroide = *itAster;
+            asteroide.actualizar(1.0f / 60.0f);
 
-            // Comprobar colisión entre asteroide y disparos
-            bool colision = false;
-            for (auto itDisparo = disparos.begin(); itDisparo != disparos.end(); ++itDisparo) {
-                if (itDisparo->colisiona(it->obtenerLimitesGlobales())) {
-                    colision = true;
-                    itDisparo = disparos.erase(itDisparo);
-                    break;  // Romper el bucle al encontrar una colisión
-                }
-            }
-
-            if (colision) {
-                it = asteroides.erase(it);
+            // Comprobar colisión entre asteroide y personaje
+            if (personaje.colisiona(asteroide.obtenerLimitesGlobales())) {
+                personaje.incrementarChoques();
+                itAster = asteroides.erase(itAster);
                 colisiones++;
             } else {
-                ++it;
+                // Comprobar colisión entre asteroide y disparos
+                bool colisionado = false; // Variable para controlar si ocurrió una colisión con un disparo
+
+                for (auto itDisp = disparos.begin(); itDisp != disparos.end();) {
+                    Disparo& disparo = *itDisp;
+                    if (disparo.colisiona(asteroide.obtenerLimitesGlobales())) {
+                        itDisp = disparos.erase(itDisp);
+                        colisionado = true;
+                        break;  // Romper el bucle para no verificar colisiones adicionales con este asteroide
+                    } else {
+                        ++itDisp;
+                    }
+                }
+
+                // Si no ocurrió colisión con ningún disparo, avanzar al siguiente asteroide
+                if (!colisionado) {
+                    ++itAster;
+                } else {
+                    // Si ocurrió colisión con un disparo, eliminar el asteroide y aumentar el contador de colisiones
+                    itAster = asteroides.erase(itAster);
+                    colisiones++;
+                }
             }
         }
 
@@ -99,6 +113,11 @@ int main() {
         }
 
         ventana.display();
+
+        // Verificar si se alcanzó el límite de colisiones del personaje
+        if (personaje.alcanzoLimiteChoques()) {
+            ventana.close();
+        }
     }
 
     return 0;
