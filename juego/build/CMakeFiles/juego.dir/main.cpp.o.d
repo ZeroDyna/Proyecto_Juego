@@ -1,5 +1,5 @@
 CMakeFiles/juego.dir/main.cpp.o: \
- /home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego/main.cpp \
+ /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/12/iostream \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -248,11 +248,11 @@ CMakeFiles/juego.dir/main.cpp.o: \
  /usr/include/SFML/Audio/SoundFileFactory.inl \
  /usr/include/SFML/Audio/SoundFileReader.hpp \
  /usr/include/SFML/Audio/SoundFileWriter.hpp \
- /home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego/Personaje.hpp \
- /home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego/disparo.hpp \
- /home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego/objeto.hpp \
- /home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego/fondo.hpp \
- /home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego/asteroide.hpp \
+ /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/Personaje.hpp \
+ /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/disparo.hpp \
+ /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/objeto.hpp \
+ /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/fondo.hpp \
+ /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/asteroide.hpp \
  /usr/include/c++/12/random /usr/include/c++/12/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \

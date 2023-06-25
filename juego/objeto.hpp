@@ -13,7 +13,7 @@ public:
     virtual ~objeto();
 
     virtual void actualizar(float deltaTime) = 0;
-    virtual void dibujar(sf::RenderWindow& ventana) const;
+    void dibujar(sf::RenderWindow& ventana) const;
     sf::FloatRect obtenerLimitesGlobales() const;
 };
 

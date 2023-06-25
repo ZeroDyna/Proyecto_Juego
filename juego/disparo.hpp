@@ -8,7 +8,8 @@ public:
     Disparo(float velocidad, float angulo, sf::Vector2f posicionInicial);
 
     void mover();
-    void dibujar(sf::RenderWindow& ventana);
+    void dibujar(sf::RenderWindow& ventana) const;
+    bool colisiona(const sf::FloatRect& bounds) const;
 
     sf::Vector2f getPosicion() const;
     float getAngulo() const;
@@ -20,4 +21,3 @@ private:
 };
 
 #endif // DISPARO_HPP
-

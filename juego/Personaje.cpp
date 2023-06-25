@@ -10,6 +10,9 @@ Personaje::Personaje(float velocidad) {
     sprite.setTexture(textura);
     sprite.setOrigin(sprite.getGlobalBounds().width / 2, sprite.getGlobalBounds().height / 2);
     sprite.setScale(0.25f, 0.25f);
+
+    choques = 0;
+    end = false;
 }
 
 void Personaje::mover(sf::RenderWindow& ventana) {
@@ -32,12 +35,28 @@ void Personaje::mover(sf::RenderWindow& ventana) {
         girar(5);
     }
 }
+
 void Personaje::dibujar(sf::RenderWindow& ventana) {
     ventana.draw(sprite);
 }
 
 void Personaje::girar(float angulo) {
     sprite.rotate(angulo);
+}
+
+void Personaje::incrementarChoques() {
+    choques++;
+    if (choques >= 3) {
+        end = true;
+    }
+}
+
+bool Personaje::colisiona(const sf::FloatRect& bounds) const {
+    return sprite.getGlobalBounds().intersects(bounds);
+}
+
+bool Personaje::alcanzoLimiteChoques() const {
+    return end;
 }
 
 sf::Vector2f Personaje::getPosicion() const {
@@ -47,4 +66,3 @@ sf::Vector2f Personaje::getPosicion() const {
 float Personaje::getAngulo() const {
     return sprite.getRotation();
 }
-

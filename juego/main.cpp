@@ -29,6 +29,8 @@ int main() {
     std::uniform_real_distribution<float> disVelocidad(50.0f, 200.0f);
     std::uniform_real_distribution<float> disRadio(20.0f, 40.0f);
 
+    int colisiones = 0;
+
     while (ventana.isOpen()) {
         sf::Event evento;
         while (ventana.pollEvent(evento)) {
@@ -38,14 +40,14 @@ int main() {
         }
 
         personaje.mover(ventana);
-		// Generar un nuevo asteroide cada segundo
-		if (temporizador.getElapsedTime().asSeconds() >= 1.0f) {
-		float posX = disX(gen);
-		float velocidadY = 500.0f; // Cambia este valor para ajustar la velocidad de caída
-		float radio = disRadio(gen);
-		asteroides.emplace_back(radio, sf::Vector2f(posX, 0.0f), sf::Vector2f(0.0f, velocidadY), ventana);
-		temporizador.restart();
-}
+        // Generar un nuevo asteroide cada segundo
+        if (temporizador.getElapsedTime().asSeconds() >= 1.0f) {
+            float posX = disX(gen);
+            float velocidadY = 500.0f; // Cambia este valor para ajustar la velocidad de caída
+            float radio = disRadio(gen);
+            asteroides.emplace_back(radio, sf::Vector2f(posX, 0.0f), sf::Vector2f(0.0f, velocidadY), &ventana);
+            temporizador.restart();
+        }
 
         // Generar un disparo al presionar la tecla "S"
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
@@ -56,8 +58,25 @@ int main() {
         }
 
         // Actualizar los asteroides existentes
-        for (auto& asteroide : asteroides) {
-            asteroide.actualizar(1.0f / 60.0f);
+        for (auto it = asteroides.begin(); it != asteroides.end();) {
+            it->actualizar(1.0f / 60.0f);
+
+            // Comprobar colisión entre asteroide y disparos
+            bool colision = false;
+            for (auto itDisparo = disparos.begin(); itDisparo != disparos.end(); ++itDisparo) {
+                if (itDisparo->colisiona(it->obtenerLimitesGlobales())) {
+                    colision = true;
+                    itDisparo = disparos.erase(itDisparo);
+                    break;  // Romper el bucle al encontrar una colisión
+                }
+            }
+
+            if (colision) {
+                it = asteroides.erase(it);
+                colisiones++;
+            } else {
+                ++it;
+            }
         }
 
         // Actualizar los disparos existentes
@@ -75,7 +94,7 @@ int main() {
         }
 
         // Dibujar los disparos existentes
-        for (auto& disparo : disparos) {
+        for (const auto& disparo : disparos) {
             disparo.dibujar(ventana);
         }
 

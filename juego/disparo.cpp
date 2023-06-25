@@ -15,8 +15,12 @@ void Disparo::mover() {
     shape.move(direccion * velocidad);
 }
 
-void Disparo::dibujar(sf::RenderWindow& ventana) {
+void Disparo::dibujar(sf::RenderWindow& ventana) const{
     ventana.draw(shape);
+}
+
+bool Disparo::colisiona(const sf::FloatRect& bounds) const {
+    return shape.getGlobalBounds().intersects(bounds);
 }
 
 sf::Vector2f Disparo::getPosicion() const {

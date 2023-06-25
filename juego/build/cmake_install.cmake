@@ -1,4 +1,4 @@
-# Install script for directory: /home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego
+# Install script for directory: /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/delusion7/Documentos/Uni/prueba_ejecucion/Proyecto_Juego/juego/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
