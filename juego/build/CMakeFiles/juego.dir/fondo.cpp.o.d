@@ -1,7 +1,7 @@
 CMakeFiles/juego.dir/fondo.cpp.o: \
- /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/fondo.cpp \
+ /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/fondo.cpp \
  /usr/include/stdc-predef.h \
- /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/fondo.hpp \
+ /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/fondo.hpp \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \

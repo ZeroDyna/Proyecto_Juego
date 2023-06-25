@@ -11,7 +11,7 @@ int main() {
     sf::RenderWindow ventana(sf::VideoMode(1800, 900), "Mi juego");
     ventana.setFramerateLimit(60);
 
-    Personaje personaje(5);
+    Personaje personaje(5,ventana);
     FondoAleatorio fondo(ventana);
     sf::Music music;
     if (!music.openFromFile("revival.ogg")) {
@@ -41,9 +41,9 @@ int main() {
 
         personaje.mover(ventana);
         // Generar un nuevo asteroide cada segundo
-        if (temporizador.getElapsedTime().asSeconds() >= 1.0f) {
+        if (temporizador.getElapsedTime().asSeconds() >= 0.5f) {
             float posX = disX(gen);
-            float velocidadY = 500.0f; // Cambia este valor para ajustar la velocidad de caída
+            float velocidadY = 700.0f; // Cambia este valor para ajustar la velocidad de caída
             float radio = disRadio(gen);
             asteroides.emplace_back(radio, sf::Vector2f(posX, 0.0f), sf::Vector2f(0.0f, velocidadY), &ventana);
             temporizador.restart();
@@ -53,7 +53,7 @@ int main() {
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
             sf::Vector2f posicionPersonaje = personaje.getPosicion();
             float anguloPersonaje = personaje.getAngulo();
-            Disparo disparo(10.0f, anguloPersonaje - 90 , posicionPersonaje);
+            Disparo disparo(10.0f, anguloPersonaje - 90, posicionPersonaje);
             disparos.push_back(disparo);
         }
 

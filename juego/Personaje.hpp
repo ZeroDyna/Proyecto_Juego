@@ -7,7 +7,7 @@
 
 class Personaje {
 public:
-    Personaje(float velocidad);
+    Personaje(float velocidad, sf::RenderWindow& ventana);
 
     void mover(sf::RenderWindow& ventana);
     void dibujar(sf::RenderWindow& ventana);

@@ -11,6 +11,7 @@ FondoAleatorio::FondoAleatorio(sf::RenderWindow& ventana) : ventana_(ventana) {
     if (!texturas_[0].loadFromFile("img/cielo.png") ||
         !texturas_[1].loadFromFile("img/espacio.png") ||
         !texturas_[2].loadFromFile("img/planeta.png")) {
+        // Manejo de error en caso de que alguna textura no se pueda cargar
     }
 
     for (int i = 0; i < 3; i++) {

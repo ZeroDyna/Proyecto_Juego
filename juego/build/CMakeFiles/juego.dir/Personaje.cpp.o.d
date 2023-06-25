@@ -1,7 +1,7 @@
 CMakeFiles/juego.dir/Personaje.cpp.o: \
- /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/Personaje.cpp \
+ /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/Personaje.cpp \
  /usr/include/stdc-predef.h \
- /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/Personaje.hpp \
+ /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/Personaje.hpp \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
@@ -232,7 +232,7 @@ CMakeFiles/juego.dir/Personaje.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/disparo.hpp \
- /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/objeto.hpp \
+ /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/disparo.hpp \
+ /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/objeto.hpp \
  /usr/include/c++/12/iostream /usr/include/c++/12/istream \
  /usr/include/c++/12/bits/istream.tcc

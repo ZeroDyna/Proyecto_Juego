@@ -1,7 +1,7 @@
 #include "Personaje.hpp"
 #include <iostream>
 
-Personaje::Personaje(float velocidad) {
+Personaje::Personaje(float velocidad, sf::RenderWindow& ventana) {
     this->velocidad = velocidad;
     if (!textura.loadFromFile("img/wing.png")) {
         std::cerr << "Failed to load image \"img/wing.png\". Reason: Unable to open file" << std::endl;
@@ -13,6 +13,9 @@ Personaje::Personaje(float velocidad) {
 
     choques = 0;
     end = false;
+
+	sf::Vector2u ventanaSize = ventana.getSize();
+    sprite.setPosition(ventanaSize.x / 2.0f, ventanaSize.y / 2.0f);
 }
 
 void Personaje::mover(sf::RenderWindow& ventana) {

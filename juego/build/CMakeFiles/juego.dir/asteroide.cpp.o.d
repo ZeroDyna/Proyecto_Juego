@@ -1,7 +1,7 @@
 CMakeFiles/juego.dir/asteroide.cpp.o: \
- /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/asteroide.cpp \
+ /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/asteroide.cpp \
  /usr/include/stdc-predef.h \
- /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/asteroide.hpp \
+ /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/asteroide.hpp \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
@@ -232,7 +232,7 @@ CMakeFiles/juego.dir/asteroide.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/objeto.hpp \
+ /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/objeto.hpp \
  /usr/include/c++/12/random /usr/include/c++/12/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \

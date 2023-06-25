@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego
+CMAKE_SOURCE_DIR = /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/build
+CMAKE_BINARY_DIR = /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/juego.dir/depend.make
@@ -70,88 +70,88 @@ include CMakeFiles/juego.dir/progress.make
 include CMakeFiles/juego.dir/flags.make
 
 CMakeFiles/juego.dir/main.cpp.o: CMakeFiles/juego.dir/flags.make
-CMakeFiles/juego.dir/main.cpp.o: /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/main.cpp
+CMakeFiles/juego.dir/main.cpp.o: /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/main.cpp
 CMakeFiles/juego.dir/main.cpp.o: CMakeFiles/juego.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/juego.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/juego.dir/main.cpp.o -MF CMakeFiles/juego.dir/main.cpp.o.d -o CMakeFiles/juego.dir/main.cpp.o -c /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/juego.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/juego.dir/main.cpp.o -MF CMakeFiles/juego.dir/main.cpp.o.d -o CMakeFiles/juego.dir/main.cpp.o -c /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/main.cpp
 
 CMakeFiles/juego.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juego.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/main.cpp > CMakeFiles/juego.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/main.cpp > CMakeFiles/juego.dir/main.cpp.i
 
 CMakeFiles/juego.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juego.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/main.cpp -o CMakeFiles/juego.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/main.cpp -o CMakeFiles/juego.dir/main.cpp.s
 
 CMakeFiles/juego.dir/Personaje.cpp.o: CMakeFiles/juego.dir/flags.make
-CMakeFiles/juego.dir/Personaje.cpp.o: /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/Personaje.cpp
+CMakeFiles/juego.dir/Personaje.cpp.o: /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/Personaje.cpp
 CMakeFiles/juego.dir/Personaje.cpp.o: CMakeFiles/juego.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/juego.dir/Personaje.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/juego.dir/Personaje.cpp.o -MF CMakeFiles/juego.dir/Personaje.cpp.o.d -o CMakeFiles/juego.dir/Personaje.cpp.o -c /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/Personaje.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/juego.dir/Personaje.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/juego.dir/Personaje.cpp.o -MF CMakeFiles/juego.dir/Personaje.cpp.o.d -o CMakeFiles/juego.dir/Personaje.cpp.o -c /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/Personaje.cpp
 
 CMakeFiles/juego.dir/Personaje.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juego.dir/Personaje.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/Personaje.cpp > CMakeFiles/juego.dir/Personaje.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/Personaje.cpp > CMakeFiles/juego.dir/Personaje.cpp.i
 
 CMakeFiles/juego.dir/Personaje.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juego.dir/Personaje.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/Personaje.cpp -o CMakeFiles/juego.dir/Personaje.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/Personaje.cpp -o CMakeFiles/juego.dir/Personaje.cpp.s
 
 CMakeFiles/juego.dir/fondo.cpp.o: CMakeFiles/juego.dir/flags.make
-CMakeFiles/juego.dir/fondo.cpp.o: /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/fondo.cpp
+CMakeFiles/juego.dir/fondo.cpp.o: /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/fondo.cpp
 CMakeFiles/juego.dir/fondo.cpp.o: CMakeFiles/juego.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/juego.dir/fondo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/juego.dir/fondo.cpp.o -MF CMakeFiles/juego.dir/fondo.cpp.o.d -o CMakeFiles/juego.dir/fondo.cpp.o -c /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/fondo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/juego.dir/fondo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/juego.dir/fondo.cpp.o -MF CMakeFiles/juego.dir/fondo.cpp.o.d -o CMakeFiles/juego.dir/fondo.cpp.o -c /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/fondo.cpp
 
 CMakeFiles/juego.dir/fondo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juego.dir/fondo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/fondo.cpp > CMakeFiles/juego.dir/fondo.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/fondo.cpp > CMakeFiles/juego.dir/fondo.cpp.i
 
 CMakeFiles/juego.dir/fondo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juego.dir/fondo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/fondo.cpp -o CMakeFiles/juego.dir/fondo.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/fondo.cpp -o CMakeFiles/juego.dir/fondo.cpp.s
 
 CMakeFiles/juego.dir/disparo.cpp.o: CMakeFiles/juego.dir/flags.make
-CMakeFiles/juego.dir/disparo.cpp.o: /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/disparo.cpp
+CMakeFiles/juego.dir/disparo.cpp.o: /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/disparo.cpp
 CMakeFiles/juego.dir/disparo.cpp.o: CMakeFiles/juego.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/juego.dir/disparo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/juego.dir/disparo.cpp.o -MF CMakeFiles/juego.dir/disparo.cpp.o.d -o CMakeFiles/juego.dir/disparo.cpp.o -c /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/disparo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/juego.dir/disparo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/juego.dir/disparo.cpp.o -MF CMakeFiles/juego.dir/disparo.cpp.o.d -o CMakeFiles/juego.dir/disparo.cpp.o -c /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/disparo.cpp
 
 CMakeFiles/juego.dir/disparo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juego.dir/disparo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/disparo.cpp > CMakeFiles/juego.dir/disparo.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/disparo.cpp > CMakeFiles/juego.dir/disparo.cpp.i
 
 CMakeFiles/juego.dir/disparo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juego.dir/disparo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/disparo.cpp -o CMakeFiles/juego.dir/disparo.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/disparo.cpp -o CMakeFiles/juego.dir/disparo.cpp.s
 
 CMakeFiles/juego.dir/objeto.cpp.o: CMakeFiles/juego.dir/flags.make
-CMakeFiles/juego.dir/objeto.cpp.o: /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/objeto.cpp
+CMakeFiles/juego.dir/objeto.cpp.o: /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/objeto.cpp
 CMakeFiles/juego.dir/objeto.cpp.o: CMakeFiles/juego.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/juego.dir/objeto.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/juego.dir/objeto.cpp.o -MF CMakeFiles/juego.dir/objeto.cpp.o.d -o CMakeFiles/juego.dir/objeto.cpp.o -c /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/objeto.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/juego.dir/objeto.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/juego.dir/objeto.cpp.o -MF CMakeFiles/juego.dir/objeto.cpp.o.d -o CMakeFiles/juego.dir/objeto.cpp.o -c /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/objeto.cpp
 
 CMakeFiles/juego.dir/objeto.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juego.dir/objeto.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/objeto.cpp > CMakeFiles/juego.dir/objeto.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/objeto.cpp > CMakeFiles/juego.dir/objeto.cpp.i
 
 CMakeFiles/juego.dir/objeto.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juego.dir/objeto.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/objeto.cpp -o CMakeFiles/juego.dir/objeto.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/objeto.cpp -o CMakeFiles/juego.dir/objeto.cpp.s
 
 CMakeFiles/juego.dir/asteroide.cpp.o: CMakeFiles/juego.dir/flags.make
-CMakeFiles/juego.dir/asteroide.cpp.o: /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/asteroide.cpp
+CMakeFiles/juego.dir/asteroide.cpp.o: /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/asteroide.cpp
 CMakeFiles/juego.dir/asteroide.cpp.o: CMakeFiles/juego.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/juego.dir/asteroide.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/juego.dir/asteroide.cpp.o -MF CMakeFiles/juego.dir/asteroide.cpp.o.d -o CMakeFiles/juego.dir/asteroide.cpp.o -c /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/asteroide.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/juego.dir/asteroide.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/juego.dir/asteroide.cpp.o -MF CMakeFiles/juego.dir/asteroide.cpp.o.d -o CMakeFiles/juego.dir/asteroide.cpp.o -c /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/asteroide.cpp
 
 CMakeFiles/juego.dir/asteroide.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juego.dir/asteroide.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/asteroide.cpp > CMakeFiles/juego.dir/asteroide.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/asteroide.cpp > CMakeFiles/juego.dir/asteroide.cpp.i
 
 CMakeFiles/juego.dir/asteroide.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juego.dir/asteroide.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/asteroide.cpp -o CMakeFiles/juego.dir/asteroide.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/asteroide.cpp -o CMakeFiles/juego.dir/asteroide.cpp.s
 
 # Object files for target juego
 juego_OBJECTS = \
@@ -177,7 +177,7 @@ juego: /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1
 juego: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 juego: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 juego: CMakeFiles/juego.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable juego"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable juego"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/juego.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -189,6 +189,6 @@ CMakeFiles/juego.dir/clean:
 .PHONY : CMakeFiles/juego.dir/clean
 
 CMakeFiles/juego.dir/depend:
-	cd /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/build /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/build /home/delusion7/Documentos/Uni/proyecto/Proyecto_Juego/juego/build/CMakeFiles/juego.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build /home/delusion7/Documentos/Uni/finalmente/Proyecto_Juego/juego/build/CMakeFiles/juego.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/juego.dir/depend
 
