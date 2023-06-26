@@ -18,6 +18,9 @@ El juego de naves se desarrolló utilizando el lenguaje de programación C++ y c
 - **Personaje**: Representa la nave del jugador y se encarga de su movimiento.
 - **Pantalla de Inicio**: Clase encargada de mostrar la pantalla de inicio del juego con interaccioon con el mouse.
 - **Objeto (Clase abstracta)**: Clase base para los asteroides y cometas. Define los métodos y atributos comunes a ambos.
+## Ejecucion del proyecto
+Al momento de iniciar la ejecucion del codigo se mostrara la siguiente ventana:
+![Pantalla de inicio](pruebas/"WhatsApp Image 2023-06-25 at 21.06.48.jpeg")
 
 Durante el desarrollo del proyecto, se enfrentaron las siguientes complicaciones:
 
