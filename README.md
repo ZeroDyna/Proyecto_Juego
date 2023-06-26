@@ -21,7 +21,27 @@ El juego de naves se desarrolló utilizando el lenguaje de programación C++ y c
 - 
 ## Ejecucion del proyecto
 Al momento de iniciar la ejecucion del codigo se mostrara la siguiente ventana:
+
 ![Pantalla de inicio](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/pruebas/WhatsApp%20Image%202023-06-25%20at%2021.06.48.jpeg)
+
+Siendo la pantalla de inicio definida en los archvios pantalla_inicio.hpp y pantalla_inicio.cpp en el cual lo mas destacable es 
+
+    void PantallaInicio::manejarEventos() {
+    sf::Event evento;
+    while (ventana_.pollEvent(evento)) {
+        if (evento.type == sf::Event::Closed) {
+            ventana_.close();
+        } else if (evento.type == sf::Event::MouseButtonPressed && evento.mouseButton.button == sf::Mouse::Left) {
+            sf::Vector2i posicionMouse = sf::Mouse::getPosition(ventana_);
+            if (textoInicio_.getGlobalBounds().contains(sf::Vector2f(posicionMouse))) {
+                iniciarJuegoSeleccionado_ = true;
+            } else if (textoSalir_.getGlobalBounds().contains(sf::Vector2f(posicionMouse))) {
+                salirSeleccionado_ = true;
+            }
+        }
+    }
+}
+
 
 Durante el desarrollo del proyecto, se enfrentaron las siguientes complicaciones:
 
