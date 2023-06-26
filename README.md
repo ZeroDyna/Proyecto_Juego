@@ -40,7 +40,27 @@ Siendo la pantalla de inicio definida en los archvios pantalla_inicio.hpp y pant
             }
         }
     }
-}
+    }
+Permite que a traves del click del mouse se selccione una de las 2 opciones disponibles.
+
+Al seleccionar la opcion iniciar juego les dara el siguiente resultado:
+
+![Pantalla de inicio](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/pruebas/WhatsApp%20Image%202023-06-25%20at%2021.06.53.jpeg)
+
+en el que se observa el Personaje que usa el sprite de 
+
+| Texto                          | Imagen                          |
+| ------------------------------ | ------------------------------- |
+| Aquí va tu texto descriptivo.  | ![Descripción de la imagen](ruta_de_la_imagen.png) |
+| Puedes añadir más contenido... |                                  |
+
+
+![Pantalla de inicio](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/pruebas/WhatsApp%20Image%202023-06-25%20at%2021.06.48.jpeg)
+
+![Pantalla de inicio](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/pruebas/WhatsApp%20Image%202023-06-25%20at%2021.06.48.jpeg)
+
+![Pantalla de inicio](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/pruebas/WhatsApp%20Image%202023-06-25%20at%2021.06.48.jpeg)
+
 
 
 Durante el desarrollo del proyecto, se enfrentaron las siguientes complicaciones:
