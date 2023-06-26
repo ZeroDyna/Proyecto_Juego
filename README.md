@@ -52,14 +52,14 @@ Al seleccionar la opcion iniciar juego les dara el siguiente resultado:
 | objeto                          | Imagen                          |
 | ------------------------------ | ------------------------------- |
 |En esta se encuentra la clase Personaje que usa un sprite de una nave de una serie de television  | ![GUTS wing](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/juego/img/wing.png) |
-|Tambien se puede observar el fondo  | ![cielo](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/juego/img/cielo.png)     | Tambien se observa el objeto asteroide que es simplemente un circulo de un color tierra|
+|Tambien se puede observar el fondo  | ![cielo](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/juego/img/cielo.png)     | Tambien se observa el objeto asteroide que es simplemente un circulo de un color tierra|![asteroide]([https://github.com/ZeroDyna/Proyecto_Juego/blob/main/juego/img/cielo.png](https://thumbs.dreamstime.com/b/radio-de-un-icono-del-c%C3%ADrculo-en-el-estilo-ne%C3%B3n-uno-la-figura-geom%C3%A9trica-colecci%C3%B3n-se-puede-utilizar-para-ui-ux-126541800.jpg)) |
 
 
-![Pantalla de inicio](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/pruebas/WhatsApp%20Image%202023-06-25%20at%2021.06.48.jpeg)
+![Pantalla de inicio](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/pruebas/WhatsApp%20Image%202023-06-25%20at%2021.06.54%20(1).jpeg)
 
-![Pantalla de inicio](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/pruebas/WhatsApp%20Image%202023-06-25%20at%2021.06.48.jpeg)
+![Pantalla de inicio](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/pruebas/WhatsApp%20Image%202023-06-25%20at%2021.06.54%20(2).jpeg)
 
-![Pantalla de inicio](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/pruebas/WhatsApp%20Image%202023-06-25%20at%2021.06.48.jpeg)
+![Pantalla de inicio](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/pruebas/WhatsApp%20Image%202023-06-25%20at%2021.06.54.jpeg)
 
 
 
