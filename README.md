@@ -49,10 +49,10 @@ Al seleccionar la opcion iniciar juego les dara el siguiente resultado:
 
  
 
-| Texto                          | Imagen                          |
+| objeto                          | Imagen                          |
 | ------------------------------ | ------------------------------- |
-|En esta se encuentra la clase Personaje que usa un sprite   | ![GUTS wing](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/juego/img/wing.png) |
-| Puedes añadir más contenido... |                                  |
+|En esta se encuentra la clase Personaje que usa un sprite de una nave de una serie de television  | ![GUTS wing](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/juego/img/wing.png) |
+|Tambien se puede observar el fondo  | ![cielo](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/juego/img/cielo.png)     | Tambien se observa el objeto asteroide que es simplemente un circulo de un color tierra|
 
 
 ![Pantalla de inicio](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/pruebas/WhatsApp%20Image%202023-06-25%20at%2021.06.48.jpeg)
