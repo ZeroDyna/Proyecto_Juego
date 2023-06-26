@@ -49,12 +49,14 @@ Al seleccionar la opcion iniciar juego les dara el siguiente resultado:
 
  
 
-| objeto                          | Imagen                          |
+| Objeto                          | Imagen                          |
 | ------------------------------ | ------------------------------- |
-|En esta se encuentra la clase Personaje que usa un sprite de una nave de una serie de television  | ![GUTS wing](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/juego/img/wing.png) |
-|Tambien se puede observar el fondo  | ![cielo](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/juego/img/cielo.png)     | Tambien se observa el objeto asteroide que es simplemente un circulo de un color tierra|![asteroide]([https://github.com/ZeroDyna/Proyecto_Juego/blob/main/juego/img/cielo.png](https://thumbs.dreamstime.com/b/radio-de-un-icono-del-c%C3%ADrculo-en-el-estilo-ne%C3%B3n-uno-la-figura-geom%C3%A9trica-colecci%C3%B3n-se-puede-utilizar-para-ui-ux-126541800.jpg)) |
+| En esta se encuentra la clase Personaje que usa un sprite de una nave de una serie de televisión  | ![GUTS wing](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/juego/img/wing.png) |
+| También se puede observar el fondo  | ![Cielo](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/juego/img/cielo.png) |
+| También se observa el objeto asteroide que es simplemente un círculo de color tierra | ![Asteroide](https://thumbs.dreamstime.com/b/radio-de-un-icono-del-c%C3%ADrculo-en-el-estilo-ne%C3%B3n-uno-la-figura-geom%C3%A9trica-colecci%C3%B3n-se-puede-utilizar-para-ui-ux-126541800.jpg) |
 
-En la clase Personaje lo mas destacable es:
+
+En la clase Personaje lo mas destacable es la funcion mover:
 
         void Personaje::mover(sf::RenderWindow& ventana) {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
@@ -78,6 +80,30 @@ En la clase Personaje lo mas destacable es:
     }
 Que permite de que el objeto Personaje pueda moverse libremente, ademas de que tambien permiten la rotacion del objeto.
 
+Para los objetos de la clase asteroide lo mas interesanre es la funcion actualizar que seria la siguiente:
+
+        void Asteroide::actualizar(float deltaTime) {
+    sf::Vector2f posicion = forma.getPosition();
+    posicion += velocidad * deltaTime;
+
+    // Si el asteroide sale de la pantalla, reiniciar su posición en la parte superior
+    if (posicion.y > ventana->getSize().y) {
+        // Generar una posición aleatoria en el eje X dentro de la ventana
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        std::uniform_real_distribution<float> disX(0.0f, static_cast<float>(ventana->getSize().x));
+        float posX = disX(gen);
+
+        // Reiniciar la posición en la parte superior de la ventana
+        posicion.x = posX;
+        posicion.y = -forma.getRadius();
+    }
+
+    forma.setPosition(posicion);
+    }
+
+Lo que hace la funcion actualizar es acutaliza la posicion del objeto agregando la velocidad del objeto multiplicado por "delta time" , ademas de que tambein ayuda al reposicionamiento de los objetos de asteroide en la parte superior de la ventana al salirse de esta a traves de generar un umero aleatorio. 
+
 A continuacion en la siguiente imagen se puede observar los objetos de la clase disparo en diferentes situaciones
 
 ![Pantalla de inicio](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/pruebas/WhatsApp%20Image%202023-06-25%20at%2021.06.54.jpeg)
@@ -85,6 +111,10 @@ A continuacion en la siguiente imagen se puede observar los objetos de la clase 
 ![Pantalla de inicio](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/pruebas/WhatsApp%20Image%202023-06-25%20at%2021.06.54%20(1).jpeg)
 
 ![Pantalla de inicio](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/pruebas/WhatsApp%20Image%202023-06-25%20at%2021.06.54%20(2).jpeg)
+
+¿Qué es lo mas destacable de la clase disparo?
+
+Pues es el calculo de la direccion del disparo que se alinea con el angulo en el que se encuentra el objeto personajee que se hace cconvirtiendo el angulo en radianes una vez hecho esto se usa el cos y el sin para calcular el componente X y la direccion Y , las cuales se van a guardar en un vector2f indicando este ultimo en que direccion se mueve. 
 
 
 
