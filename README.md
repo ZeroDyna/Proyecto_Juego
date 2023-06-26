@@ -21,7 +21,7 @@ El juego de naves se desarrolló utilizando el lenguaje de programación C++ y c
 - 
 ## Ejecucion del proyecto
 Al momento de iniciar la ejecucion del codigo se mostrara la siguiente ventana:
-![Pantalla de inicio](pruebas/WhatsApp Image 2023-06-25 at 21.06.48.jpeg)
+![Pantalla de inicio](https://github.com/ZeroDyna/Proyecto_Juego/blob/main/pruebas/WhatsApp%20Image%202023-06-25%20at%2021.06.48.jpeg)
 
 Durante el desarrollo del proyecto, se enfrentaron las siguientes complicaciones:
 
